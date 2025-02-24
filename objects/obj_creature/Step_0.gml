@@ -38,9 +38,9 @@ if(room != rm_garden) {
 		} else if(inst.sprite_index == spr_water_debug) {
 			x_vel = water_speed;
 		} 
-	} else if(glide && y_vel > 0) {
+	} else if(glide_hover && y_vel > 0) {
 		x_vel = glide_speed;
-		y_vel = glide_hover;
+		y_vel = 1;
 	}
 
 	inst = instance_place(x + 1, y, obj_tile);

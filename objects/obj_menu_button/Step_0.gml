@@ -16,6 +16,7 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 			obj_game_manager.shop = true;
 		break;
 	}
+	
 }
 
 if(!mouse_check_button(mb_left))

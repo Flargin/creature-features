@@ -1,6 +1,6 @@
 //dimensions of the camera
-cam_width = 480;
-cam_height = 270;
+cam_width = 512;
+cam_height = 288;
 
 //object for the camera to follow
 follow = obj_creature_player;
