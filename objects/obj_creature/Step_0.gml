@@ -28,14 +28,14 @@ if(room != rm_garden) {
 
 	
 
-	x_vel = 1;
+	//x_vel = 1;
 
 	var inst = instance_place(x, y + 1, obj_tile);
 
 	if(instance_exists(inst)) {
-		if(inst == obj_tile_land || inst == obj_tile_climb) {
+		if(inst.type == "land" || inst.type == "climb") {
 			x_vel = land_speed;
-		} else if(inst == obj_tile_water) {
+		} else if(inst.type == "water") {
 			x_vel = water_speed;
 		} 
 	} else if(glide_hover && y_vel > 0) {
@@ -46,7 +46,7 @@ if(room != rm_garden) {
 	inst = instance_place(x + 1, y, obj_tile);
 
 	if(instance_exists(inst)) {
-		if(inst == obj_tile_climb) {
+		if(inst.type == "climb") {
 			y_vel = -climb_speed;
 		}
 	}
