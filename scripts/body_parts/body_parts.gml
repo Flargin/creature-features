@@ -1,155 +1,274 @@
-function body_parts(){
+function body_parts(_list){
 #region VARIBALES THAT AFFECT STATS
 	head = {
-		type: "head",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 1,
-		g_spd: 1,
-		ability: 0,
+		type: "head", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
 
 	body = {
-		type: "body",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 1,
-		g:	false,
-		g_spd: 1,
-		energy: 0,
+		type: "body", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
 
 	legs = {
-		type: "legs",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 1,
-		g_spd: 1,
+		type: "legs", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
 
 	tail = {
-		type: "tail",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 1,
-		g: false,
-		g_spd: 1,
+		type: "tail", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
+	
 #endregion
 	
 /// INDIVIDUAL BODY PARTS
 	
-#region Fish body parts
+#region Head Parts
 	fish_head = {
-		type: "head",
-		w_spd: 3,
-		l_spd: 1,
-		c_spd: 1,
-		g_spd: 1,
-		ability: 1,
+		type: "head", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
+	ds_list_add(_list, fish_head);
+	
+	squirrel_head = {
+		type: "head", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, squirrel_head);
+	
+	rabbit_head = {
+		type: "head", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, rabbit_head);
+
+#endregion
+
+#region Body Parts
 
 	fish_body = {
-		type: "body",
-		w_spd: 6,
-		l_spd: 1,
-		c_spd: 1,
-		g:	false,
-		g_spd: 1,
-		energy: 0,
+		type: "body", // part type
+		sprite: -1, // sprite
+		w_spd: 5, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
+	ds_list_add(_list, fish_body);
+	
+	squirrel_body = {
+		type: "body", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 5, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, squirrel_body);
+	
+	rabbit_body = {
+		type: "body", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 5, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, rabbit_body);
+	
+#endregion
+
+#region Leg Parts
 
 	fish_legs = {
-		type: "legs",
-		w_spd: 6,
-		l_spd: 1,
-		c_spd: 1,
-		g_spd: 1,
+		type: "legs", // part type
+		sprite: -1, // sprite
+		w_spd: 5, // water speed
+		l_spd: -5, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
+	ds_list_add(_list, fish_legs);
+	
+	squirrel_legs = {
+		type: "legs", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 5, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, squirrel_legs);
+	
+	rabbit_legs = {
+		type: "legs", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 5, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, rabbit_legs);
+	
+#endregion
+
+#region Tail Parts
 
 	fish_tail = {
-		type: "tail",
-		w_spd: 7,
-		l_spd: 1,
-		c_spd: 1,
-		g: false,
-		g_spd: 1,
+		type: "tail", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 15, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
-#endregion
-	
-#region Squirrel body parts
-	squirrel_head = {
-		type: "head",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 3,
-		g_spd: 1,
-		ability: 2,
-	}
-
-	squirrel_body = {
-		type: "body",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 5,
-		g:	false,
-		g_spd: 1,
-		energy: 0,
-	}
-
-	squirrel_legs = {
-		type: "legs",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 5,
-		g_spd: 1,
-	}
+	ds_list_add(_list, fish_tail);
 
 	squirrel_tail = {
-		type: "tail",
-		w_spd: 1,
-		l_spd: 1,
-		c_spd: 5,
-		g: false,
-		g_spd: 1,
+		type: "tail", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 15, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
-#endregion
-	
-#region Rabbit body parts
-	rabbit_head = {
-		type: "head",
-		w_spd: 1,
-		l_spd: 5,
-		c_spd: 1,
-		g_spd: 1,
-		ability: 0,
-	}
-
-	rabbit_body = {
-		type: "body",
-		w_spd: 1,
-		l_spd: 5,
-		c_spd: 1,
-		g:	false,
-		g_spd: 1,
-		energy: 0,
-	}
-
-	rabbit_legs = {
-		type: "legs",
-		w_spd: 1,
-		l_spd: 5,
-		c_spd: 1,
-		g_spd: 1,
-	}
+	ds_list_add(_list, squirrel_tail);
 
 	rabbit_tail = {
-		type: "tail",
-		w_spd: 1,
-		l_spd: 5,
-		c_spd: 1,
-		g: false,
-		g_spd: 1,
+		type: "tail", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		w_per: 0, // water % speed
+		l_per: 15, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
 	}
+	ds_list_add(_list, rabbit_tail);
+	
 #endregion
 }
+

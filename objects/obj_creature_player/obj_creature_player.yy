@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_creature_player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_creature_player",
   "overriddenProperties":[],

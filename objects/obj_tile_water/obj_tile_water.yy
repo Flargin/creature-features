@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tile",
+  "%Name":"obj_tile_water",
   "eventList":[],
   "managed":true,
-  "name":"obj_tile",
+  "name":"obj_tile_water",
   "overriddenProperties":[],
   "parent":{
     "name":"tiles",
     "path":"folders/Objects/tiles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_tile",
+    "path":"objects/obj_tile/obj_tile.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tile_default",
-    "path":"sprites/spr_tile_default/spr_tile_default.yy",
+    "name":"spr_tile_water",
+    "path":"sprites/spr_tile_water/spr_tile_water.yy",
   },
   "spriteMaskId":null,
   "visible":true,

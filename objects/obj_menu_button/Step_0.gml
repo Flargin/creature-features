@@ -15,6 +15,16 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 		case "Shop":
 			obj_game_manager.shop = true;
 		break;
+		
+		case "BEGIN":
+			with(obj_game_manager)
+				room = stages[stage - 1];
+		break;
+	}
+	
+	if(part != -1) {
+		set_part(part);
+		obj_game_manager.shop = false;
 	}
 	
 }

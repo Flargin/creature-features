@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tile",
+  "%Name":"obj_portal",
   "eventList":[],
   "managed":true,
-  "name":"obj_tile",
+  "name":"obj_portal",
   "overriddenProperties":[],
   "parent":{
-    "name":"tiles",
-    "path":"folders/Objects/tiles.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tile_default",
-    "path":"sprites/spr_tile_default/spr_tile_default.yy",
+    "name":"spr_portal_debug",
+    "path":"sprites/spr_portal_debug/spr_portal_debug.yy",
   },
   "spriteMaskId":null,
   "visible":true,

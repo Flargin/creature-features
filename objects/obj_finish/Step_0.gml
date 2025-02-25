@@ -1,7 +1,8 @@
 if(!win && !lose) {
-	if(place_meeting(x, y, obj_creature_player))
+	if(place_meeting(x, y, obj_creature_player)) {
 		win = true;
-	else if(place_meeting(x, y, obj_creature))
+		room = rm_garden;
+	} else if(place_meeting(x, y, obj_creature))
 		lose = true;
 }
 

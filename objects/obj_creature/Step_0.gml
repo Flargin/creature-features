@@ -33,9 +33,9 @@ if(room != rm_garden) {
 	var inst = instance_place(x, y + 1, obj_tile);
 
 	if(instance_exists(inst)) {
-		if(inst.sprite_index == spr_grass_debug || inst.sprite_index == spr_hill_debug) {
+		if(inst == obj_tile_land || inst == obj_tile_climb) {
 			x_vel = land_speed;
-		} else if(inst.sprite_index == spr_water_debug) {
+		} else if(inst == obj_tile_water) {
 			x_vel = water_speed;
 		} 
 	} else if(glide_hover && y_vel > 0) {
@@ -46,7 +46,7 @@ if(room != rm_garden) {
 	inst = instance_place(x + 1, y, obj_tile);
 
 	if(instance_exists(inst)) {
-		if(inst.sprite_index == spr_hill_debug) {
+		if(inst == obj_tile_climb) {
 			y_vel = -climb_speed;
 		}
 	}
@@ -60,3 +60,6 @@ if(room != rm_garden) {
 	
 	x_vel = clamp(x_vel, -5, 5);
 }
+
+//calculations
+calculate_stats();
