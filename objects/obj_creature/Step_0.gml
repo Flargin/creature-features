@@ -24,6 +24,11 @@ y += y_vel; // adds the y velocity to the y position of the object
 //gravity
 y_vel += grav;
 
+if(x_vel > 0)
+	image_xscale = 1;
+else if(x_vel < 0)
+	image_xscale = -1;
+
 if(room != rm_garden) {
 
 	

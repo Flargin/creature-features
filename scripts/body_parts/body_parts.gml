@@ -119,7 +119,7 @@ function body_parts(_list){
 
 	fish_body = {
 		type: "body", // part type
-		sprite: -1, // sprite
+		sprite: spr_fish_body, // sprite
 		w_spd: 5, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
@@ -135,7 +135,7 @@ function body_parts(_list){
 	
 	squirrel_body = {
 		type: "body", // part type
-		sprite: -1, // sprite
+		sprite: spr_squirrel_body, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 5, // climb speed
@@ -151,7 +151,7 @@ function body_parts(_list){
 	
 	rabbit_body = {
 		type: "body", // part type
-		sprite: -1, // sprite
+		sprite: spr_rabbit_body, // sprite
 		w_spd: 0, // water speed
 		l_spd: 5, // land speed
 		c_spd: 0, // climb speed
@@ -187,7 +187,7 @@ function body_parts(_list){
 	
 	squirrel_legs = {
 		type: "legs", // part type
-		sprite: -1, // sprite
+		sprite: spr_squirrel_legs, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 5, // climb speed
@@ -203,7 +203,7 @@ function body_parts(_list){
 	
 	rabbit_legs = {
 		type: "legs", // part type
-		sprite: -1, // sprite
+		sprite: spr_rabbit_legs, // sprite
 		w_spd: 0, // water speed
 		l_spd: 5, // land speed
 		c_spd: 0, // climb speed
@@ -223,7 +223,7 @@ function body_parts(_list){
 
 	fish_tail = {
 		type: "tail", // part type
-		sprite: -1, // sprite
+		sprite: spr_fish_tail, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
@@ -239,7 +239,7 @@ function body_parts(_list){
 
 	squirrel_tail = {
 		type: "tail", // part type
-		sprite: -1, // sprite
+		sprite: spr_squirrel_tail, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
@@ -255,7 +255,7 @@ function body_parts(_list){
 
 	rabbit_tail = {
 		type: "tail", // part type
-		sprite: -1, // sprite
+		sprite: spr_rabbit_tail, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
