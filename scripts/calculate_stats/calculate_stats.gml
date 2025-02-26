@@ -3,7 +3,6 @@
 function calculate_stats(){
 	with(obj_game_manager) {
 	other.land_speed = max(5,
-		
 		(10 + head.l_spd + body.l_spd + legs.l_spd + tail.l_spd) * 
 		((head.l_per / 100) + (body.l_per / 100) + (legs.l_per / 100) + (tail.l_per / 100) + 1)
 	) / 5;
