@@ -22,3 +22,7 @@ stages =
 	rm_stage_2,
 	rm_stage_3,
 ];
+
+dither_progress = 0;
+
+show_debug_overlay(true);

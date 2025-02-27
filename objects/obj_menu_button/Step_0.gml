@@ -5,7 +5,12 @@ if(place_meeting(x, y, obj_cursor) && mouse_check_button_pressed(mb_left))
 if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_left)) {
 	switch(text) {
 		case "Start": 
-			room = rm_garden;
+			if(!instance_exists(obj_dither)) {
+				with(instance_create_depth(-10, -10, depth, obj_dither)) {
+					in = true;
+					go = rm_garden;
+				}
+			}
 		break;
 		
 		case "Exit" :
