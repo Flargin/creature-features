@@ -11,8 +11,14 @@ draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 draw_set_color(c_white);
 
-if(sprite != -1) {
-	draw_sprite(sprite, 0, x, y);
+if(part != -1) {
+	if(part.sprite != -1)
+		draw_sprite_pos(part.sprite, 0,
+			x + sprite_width / 2 - sprite_get_width(part.sprite) / 2, y + 4,
+			x + sprite_width / 2 + sprite_get_width(part.sprite) / 2, y + 4,
+			x + sprite_width / 2 + sprite_get_width(part.sprite) / 2, y + 4 + sprite_get_height(part.sprite),
+			x + sprite_width / 2 - sprite_get_width(part.sprite) / 2, y + 4 + sprite_get_height(part.sprite), 1);
+		//draw_sprite(part.sprite, 0, x + sprite_width / 2 - sprite_get_width(part.sprite) / 2, y + 4);		
 }
 
 if(held)
