@@ -394,7 +394,7 @@ function body_parts(_list){
 	sleipnir_legs = {
 		type: "legs", // part type
 		sprite: spr_sleipnir_legs, // sprite
-		legs_body: [0, -11], //anchor point for body [x,y]
+		legs_body: [0, -40], //anchor point for body [x,y]
 		w_spd: 0, // water speed
 		l_spd: 20, // land speed
 		c_spd: -10, // climb speed
@@ -413,7 +413,7 @@ function body_parts(_list){
 	dolphin_legs = {
 		type: "legs", // part type
 		sprite: -1, // sprite
-		legs_body: [0, -11], //anchor point for body [x,y]
+		legs_body: [0, -10], //anchor point for body [x,y]
 		w_spd: 20, // water speed
 		l_spd: -10, // land speed
 		c_spd: 0, // climb speed
