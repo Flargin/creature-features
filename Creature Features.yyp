@@ -39,6 +39,7 @@
   "name":"Creature Features",
   "resources":[
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
+    {"id":{"name":"fnt_description","path":"fonts/fnt_description/fnt_description.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_creature_player","path":"objects/obj_creature_player/obj_creature_player.yy",},},
     {"id":{"name":"obj_creature","path":"objects/obj_creature/obj_creature.yy",},},
