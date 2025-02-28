@@ -1,5 +1,5 @@
 t_min = -23;
-t_max = 40;
+t_max = 50;
 done = false;
 go = -1;
 

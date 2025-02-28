@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_sleipnir_legs",
   "bboxMode":0,
-  "bbox_bottom":46,
+  "bbox_bottom":52,
   "bbox_left":0,
-  "bbox_right":48,
+  "bbox_right":90,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,20 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d716ccfd-a9a1-44f1-a320-dc76b6703717","name":"d716ccfd-a9a1-44f1-a320-dc76b6703717","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2f2435a7-d94e-4574-bd4a-cbafa519f57c","name":"2f2435a7-d94e-4574-bd4a-cbafa519f57c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1dd7df74-b641-42e0-b6b7-763ba26b6e95","name":"1dd7df74-b641-42e0-b6b7-763ba26b6e95","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"09663deb-4fee-4add-a1d3-73ad3fd67194","name":"09663deb-4fee-4add-a1d3-73ad3fd67194","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"036c21b2-ca66-4ef4-aa21-17613b5ce0ec","name":"036c21b2-ca66-4ef4-aa21-17613b5ce0ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3cc3e8ec-a0cb-4d2f-8258-cc3515751dc7","name":"3cc3e8ec-a0cb-4d2f-8258-cc3515751dc7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"cfff4ba9-a3ae-4d57-abdd-94f829441c14","name":"cfff4ba9-a3ae-4d57-abdd-94f829441c14","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f5f3ddba-2d91-43d2-b339-067bd76fd12e","name":"f5f3ddba-2d91-43d2-b339-067bd76fd12e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":47,
+  "height":53,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"041a66ee-ace3-4774-a561-201d51c09600","blendMode":0,"displayName":"default","isLocked":false,"name":"041a66ee-ace3-4774-a561-201d51c09600","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7c113c56-e664-45ed-903e-d5d181d4e02f","blendMode":0,"displayName":"default","isLocked":false,"name":"7c113c56-e664-45ed-903e-d5d181d4e02f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_sleipnir_legs",
   "nineSlice":null,
@@ -49,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":7.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,14 +75,32 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d716ccfd-a9a1-44f1-a320-dc76b6703717","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"335f14ce-d2fd-4672-97fd-f8aba4a44b08","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2f2435a7-d94e-4574-bd4a-cbafa519f57c","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c19c92d0-6b50-438d-af9a-a11bce982176","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1dd7df74-b641-42e0-b6b7-763ba26b6e95","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ffda6507-0498-4368-b8c0-0ff2cbd7d6e1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"09663deb-4fee-4add-a1d3-73ad3fd67194","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"99e430ed-9527-43e1-8937-446f5be3eea3","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"036c21b2-ca66-4ef4-aa21-17613b5ce0ec","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e9a15867-fe23-436c-a5f5-398331048f92","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3cc3e8ec-a0cb-4d2f-8258-cc3515751dc7","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"96c86664-a93f-4684-a8d8-f30667b8d3ac","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cfff4ba9-a3ae-4d57-abdd-94f829441c14","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2a3d3be7-f41f-4b82-b697-77aa89204776","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f5f3ddba-2d91-43d2-b339-067bd76fd12e","path":"sprites/spr_sleipnir_legs/spr_sleipnir_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fe38b732-2d10-4759-95e6-2572e237d1f5","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":24,
-    "yorigin":46,
+    "xorigin":45,
+    "yorigin":50,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +110,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":49,
+  "width":91,
 }

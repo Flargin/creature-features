@@ -57,13 +57,19 @@ if(room != rm_garden) {
 	}
 
 } else {
-	var num = random_range(0, 100);
-	if(num < 50) x_vel -= sign(x_vel) * .25;
-	else if(num < 75) x_vel += .5;
-	else if(num < 99) x_vel -= .5;
-	else if(num < 100) y_vel = -3;
+	if(obj_dispenser.active && image_alpha >= 1 && !obj_dispenser.ready) {
+		x_vel = -4;
+	} else if(obj_dispenser.active && obj_dispenser.tuah) {
+		image_alpha += 1/11;
+	} else if(image_alpha >= 1) {
+		var num = random_range(-(x - room_width / 2) / 16 , 100 + (room_width / 2 - x) / 16);
+		if(num < 51 && num > 50 && place_meeting(x, y + 1, obj_tile)) y_vel = -3;
+		else if(num < 5) x_vel -= .5;
+		else if(num > 95) x_vel += .5;
+		else if(num >= 5 && num <= 95) x_vel -= sign(x_vel) * (1/16);
 	
-	x_vel = clamp(x_vel, -5, 5);
+		x_vel = clamp(x_vel, -5, 5);
+	}
 }
 
 //calculations

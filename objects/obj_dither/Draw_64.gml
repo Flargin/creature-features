@@ -9,7 +9,8 @@ if(in)
 else
 	t--;
 
-if(in && t >= t_max) 
+if(in && t >= t_max) {
 	room = go;
-else if(!in && t <= t_min)
+	in = false;
+} else if(!in && t <= t_min)
 	instance_destroy();

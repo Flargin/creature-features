@@ -5,13 +5,12 @@ randomize();
 
 //player creature creation
 list = ds_list_create();
-
-
 body_parts(list);
 
-shop_list = ds_list_create();
-for(var i = 0; i < ds_list_size(list); i++)
-	ds_list_add(shop_list, ds_list_find_value(list, i));
+shop_list = array_create(3, -1);
+reroll_shop();
+reroll = true;
+
 
 
 //stage setup
@@ -25,4 +24,6 @@ stages =
 
 dither_progress = 0;
 
-show_debug_overlay(true);
+///DEBUG
+debug = false;
+//show_debug_overlay(true);

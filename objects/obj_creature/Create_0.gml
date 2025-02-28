@@ -12,3 +12,4 @@ image_blend = make_color_rgb(irandom(255), irandom(255), irandom(255));
 calculate_stats();
 
 legs_animate = 0;
+tail_animate = 0;
