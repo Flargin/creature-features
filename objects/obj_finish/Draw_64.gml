@@ -1,4 +1,4 @@
-draw_set_font(fnt_debug);
+draw_set_font(fnt_default);
 if(win)
 	draw_text(0, 0, "WIN");
 else if(lose)

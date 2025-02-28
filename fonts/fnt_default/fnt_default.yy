@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_debug",
+  "%Name":"fnt_default",
   "AntiAlias":0,
   "applyKerning":0,
   "ascender":17,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":21,
   "maintainGms1Font":false,
-  "name":"fnt_debug",
+  "name":"fnt_default",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

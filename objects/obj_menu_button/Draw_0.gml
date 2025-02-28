@@ -1,7 +1,7 @@
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(c_black);
-draw_set_font(fnt_debug);
+draw_set_font(fnt_default);
 
 draw_self();
 draw_text(x + sprite_width / 2, y + sprite_height / 2, text);
@@ -87,7 +87,7 @@ if(part != -1) {
 		draw_text(x + sprite_width / 2, y + height, "Can Glide");
 		height += text_height;
 	}
-	draw_set_font(fnt_debug);
+	draw_set_font(fnt_default);
 }
 
 
