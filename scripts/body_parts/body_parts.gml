@@ -2,7 +2,7 @@ function body_parts(_list){
 #region VARIBALES THAT AFFECT STATS
 	head = {
 		type: "head", // part type
-		sprite: -1, // sprite
+		sprite: spr_gloop_head, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
@@ -19,9 +19,9 @@ function body_parts(_list){
 
 	body = {
 		type: "body", // part type
-		sprite: -1, // sprite
-		body_tail: [0, 0], // anchor point for tail [x, y]
-		body_head: [0, 0], // anchor point for head [x, y]
+		sprite: spr_gloop_body, // sprite
+		body_tail: [-10, -4], // anchor point for tail [x, y]
+		body_head: [-2, -10], // anchor point for head [x, y]
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
@@ -38,8 +38,8 @@ function body_parts(_list){
 
 	legs = {
 		type: "legs", // part type
-		sprite: -1, // sprite
-		legs_body: [0, 0], //anchor point for body [x,y]
+		sprite: spr_gloop_legs, // sprite
+		legs_body: [8, -8], //anchor point for body [x,y]
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
@@ -370,7 +370,7 @@ function body_parts(_list){
 		type: "legs", // part type
 		name: "Rabbit Legs", // name of part (used for shop)
 		sprite: spr_rabbit_legs, // sprite
-		legs_body: [0, -4], //anchor point for body [x,y]
+		legs_body: [0, -8], //anchor point for body [x,y]
 		w_spd: 0, // water speed
 		l_spd: 5, // land speed
 		c_spd: 0, // climb speed
@@ -561,7 +561,7 @@ function body_parts(_list){
 		c_per: 0, // climb % speed
 		g_per: 30, // glide % speed
 		a_per: 0, // air % speed
-		g:	false, // can glide
+		g:	true, // can glide
 		ability: -1, // ability ID ( -1 means no ability )
 	}
 	ds_list_add(_list, dragon_tail);

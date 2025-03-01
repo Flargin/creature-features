@@ -41,9 +41,9 @@ if(room != rm_garden) {
 		} else if(inst.type == "water") {
 			x_vel = water_speed;
 		} 
-	} else if(glide_hover && y_vel > 0 && image_angle == 0) {
-		x_vel = glide_speed;
-		y_vel = 1;
+	} else if(glide_hover && y_vel > 0 && angle == 0) {
+		x_vel = air_speed;
+		y_vel = 5 / glide;
 	}
 
 	inst = instance_place(x + 1, y, obj_tile);

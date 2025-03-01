@@ -17,7 +17,17 @@ function calculate_stats(){
 		((head.c_per / 100) + (body.c_per / 100) + (legs.c_per / 100) + (tail.c_per / 100) + 1)
 	) / 5;
 	
-	other.glide_speed = head.g_spd + body.g_spd + legs.g_spd + tail.g_spd;
-	other.glide_hover = body.g || tail.g;
+	other.air_speed = max(5,
+		(10 + head.a_spd + body.a_spd + legs.a_spd + tail.a_spd) * 
+		((head.a_per / 100) + (body.a_per / 100) + (legs.a_per / 100) + (tail.a_per / 100) + 1)
+	) / 5;
+	
+	other.glide = max(5,
+		(10 + head.g_spd + body.g_spd + legs.g_spd + tail.g_spd) * 
+		((head.g_per / 100) + (body.g_per / 100) + (legs.g_per / 100) + (tail.g_per / 100) + 1)
+	) / 5;
+	
+	other.glide_hover = head.g || body.g || legs.g || tail.g;
+	
 	}
 }
