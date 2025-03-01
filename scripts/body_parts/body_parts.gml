@@ -447,6 +447,47 @@ function body_parts(_list){
 	}
 	ds_list_add(_list, dolphin_legs);
 	
+	
+	cthulu_legs = {
+		type: "legs", // part type
+		name: "Cthulu Legs", // name of part (used for shop)
+		sprite: spr_cthulu_legs, // sprite
+		legs_body: [0, -35], //anchor point for body [x,y]
+		w_spd: -20, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 10, // glide speed
+		a_spd: 10, // air speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		a_per: 0, // air % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, cthulu_legs);
+	
+	steampunk_legs = {
+		type: "legs", // part type
+		name: "Steampunk Legs", // name of part (used for shop)
+		sprite: spr_steampunk_legs, // sprite
+		legs_body: [0, -70], //anchor point for body [x,y]
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		a_spd: 0, // air speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		a_per: 0, // air % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	ds_list_add(_list, dolphin_legs);
+	
 #endregion
 
 #region Tail Parts
