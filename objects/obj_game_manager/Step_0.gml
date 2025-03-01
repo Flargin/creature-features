@@ -1,6 +1,9 @@
 if(keyboard_check_pressed(ord("R")))
 	room_restart();
-	
+if(keyboard_check_pressed(vk_f2))
+	room = rm_stage_1
+if(keyboard_check_pressed(vk_f3))
+	room = rm_stage_2
 	
 if(room == rm_garden) {
 	if(shop) {

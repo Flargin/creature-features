@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_portal",
-  "eventList":[],
+  "%Name":"obj_glow_visuals",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_portal",
+  "name":"obj_glow_visuals",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_portal_debug",
-    "path":"sprites/spr_portal_debug/spr_portal_debug.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
