@@ -11,7 +11,7 @@ shop_list = array_create(3, -1);
 reroll_shop();
 reroll = true;
 
-
+player_begin = false;
 
 //stage setup
 stage = 1;
@@ -22,7 +22,9 @@ stages =
 	rm_stage_3,
 ];
 
-dither_progress = 0;
+
+
+
 
 ///DEBUG
 debug = false;

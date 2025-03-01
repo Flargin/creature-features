@@ -33,7 +33,7 @@ function reroll_shop(){
 				with(instance_create_depth(0, 0, depth - 100, obj_menu_button)) {
 					//set positioning
 					image_xscale = 4.3125;
-					image_yscale = (room_height) / sprite_get_height(spr_menu_button);
+					image_yscale = 6;
 					x = (room_width / 2) - (sprite_width / 2) + (sprite_width + 32) * i;
 					y = 64;
 					

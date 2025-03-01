@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_rabbit_legs",
   "bboxMode":0,
-  "bbox_bottom":7,
+  "bbox_bottom":25,
   "bbox_left":0,
-  "bbox_right":22,
+  "bbox_right":26,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,20 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"02951452-95b9-4e11-81a2-68c5b3403453","name":"02951452-95b9-4e11-81a2-68c5b3403453","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ceb5a793-89f3-4830-a05e-a1ff96c41666","name":"ceb5a793-89f3-4830-a05e-a1ff96c41666","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1e0e041c-416a-4a68-ab00-b0b0d60babb4","name":"1e0e041c-416a-4a68-ab00-b0b0d60babb4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9349c11b-7d0c-466c-8a26-fa6dc70ba508","name":"9349c11b-7d0c-466c-8a26-fa6dc70ba508","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d4e7caf9-d161-435e-a0f5-3da1cad3d57b","name":"d4e7caf9-d161-435e-a0f5-3da1cad3d57b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"75ec15de-8ff1-450c-a0cf-0b0b06001499","name":"75ec15de-8ff1-450c-a0cf-0b0b06001499","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5de1a1da-1984-443a-808c-f2b4a58f9b61","name":"5de1a1da-1984-443a-808c-f2b4a58f9b61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3cf648e8-bc55-4810-a6cf-69782382fb9b","name":"3cf648e8-bc55-4810-a6cf-69782382fb9b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":8,
+  "height":26,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a23c66ab-b380-47fa-a86f-8b24a2c1f11a","blendMode":0,"displayName":"default","isLocked":false,"name":"a23c66ab-b380-47fa-a86f-8b24a2c1f11a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c834bbd0-8d98-4fa1-8364-cc103c7b0da8","blendMode":0,"displayName":"default","isLocked":false,"name":"c834bbd0-8d98-4fa1-8364-cc103c7b0da8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_rabbit_legs",
   "nineSlice":null,
@@ -49,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":7.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,14 +75,32 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"02951452-95b9-4e11-81a2-68c5b3403453","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f722c595-fc7c-4c20-9ba7-a9b4990f5c2b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ceb5a793-89f3-4830-a05e-a1ff96c41666","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d526fca7-e390-4b9f-902b-e6c078dec6ed","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e0e041c-416a-4a68-ab00-b0b0d60babb4","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c2c8fb94-5407-4cb8-ab88-c811b1d7e139","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9349c11b-7d0c-466c-8a26-fa6dc70ba508","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"178eb88a-e724-4d75-a306-a117ea762915","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d4e7caf9-d161-435e-a0f5-3da1cad3d57b","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"03335a5b-3a9d-4cf1-9369-3e09512351d3","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"75ec15de-8ff1-450c-a0cf-0b0b06001499","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"06a5b106-7c86-46c6-976d-514396457b46","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5de1a1da-1984-443a-808c-f2b4a58f9b61","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"59e8e85a-07f7-485f-9f2c-614d762fda02","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3cf648e8-bc55-4810-a6cf-69782382fb9b","path":"sprites/spr_rabbit_legs/spr_rabbit_legs.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7d321a60-3016-4224-ba97-2d7285b63632","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":12,
-    "yorigin":8,
+    "xorigin":15,
+    "yorigin":24,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +110,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":23,
+  "width":27,
 }

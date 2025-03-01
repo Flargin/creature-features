@@ -28,7 +28,9 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 				with(instance_create_depth(-10, -10, depth - 10, obj_dither)) {
 					in = true;
 					go = obj_game_manager.stages[obj_game_manager.stage - 1];
+					t = -100;
 				}
+				obj_game_manager.player_begin = true;
 			}
 		break;
 		

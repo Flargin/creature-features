@@ -12,5 +12,6 @@ else
 if(in && t >= t_max) {
 	room = go;
 	in = false;
+	obj_game_manager.player_begin = false;
 } else if(!in && t <= t_min)
 	instance_destroy();

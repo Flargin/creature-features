@@ -15,7 +15,7 @@ if (place_meeting(x, y + y_vel, obj_tile)){
     while (!place_meeting(x, y + sign(y_vel), obj_tile) && (sign(y_vel) != 0)){
         y += sign(y_vel);
     }
-
+	
     y_vel = 0;
 }
 
@@ -30,11 +30,9 @@ else if(x_vel < 0)
 	image_xscale = -1;
 
 if(room != rm_garden) {
-
 	
-
-	//x_vel = 1;
-
+	x_vel = 1;
+	
 	var inst = instance_place(x, y + 1, obj_tile);
 
 	if(instance_exists(inst)) {
@@ -43,7 +41,7 @@ if(room != rm_garden) {
 		} else if(inst.type == "water") {
 			x_vel = water_speed;
 		} 
-	} else if(glide_hover && y_vel > 0) {
+	} else if(glide_hover && y_vel > 0 && image_angle == 0) {
 		x_vel = glide_speed;
 		y_vel = 1;
 	}
@@ -51,9 +49,7 @@ if(room != rm_garden) {
 	inst = instance_place(x + 1, y, obj_tile);
 
 	if(instance_exists(inst)) {
-		if(inst.type == "climb") {
-			y_vel = -climb_speed;
-		}
+		y_vel = -climb_speed;
 	}
 
 } else {
@@ -61,6 +57,8 @@ if(room != rm_garden) {
 		x_vel = -4;
 	} else if(obj_dispenser.active && obj_dispenser.tuah) {
 		image_alpha += 1/11;
+	} else if(obj_game_manager.player_begin) { 
+		x_vel = 3;
 	} else if(image_alpha >= 1) {
 		var num = random_range(-(x - room_width / 2) / 16 , 100 + (room_width / 2 - x) / 16);
 		if(num < 51 && num > 50 && place_meeting(x, y + 1, obj_tile)) y_vel = -3;
@@ -71,6 +69,14 @@ if(room != rm_garden) {
 		x_vel = clamp(x_vel, -5, 5);
 	}
 }
+
+//ROTATION
+if(place_meeting(x + 32, y, obj_tile)) {
+	angle += 6;
+} else {
+	angle -= 6;
+}
+angle = clamp(angle, 0, 90);
 
 //calculations
 calculate_stats();

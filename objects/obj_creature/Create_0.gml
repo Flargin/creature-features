@@ -3,6 +3,7 @@ y_vel = 0; //determines the y velocity
 grav = 0.5; //strength of gravity
 last_h = 0;
 hor_move = 0;
+angle = 0;
 
 randomize();
 
