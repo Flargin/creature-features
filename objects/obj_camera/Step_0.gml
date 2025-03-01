@@ -1,6 +1,6 @@
 if(follow != noone){
 	x_to = follow.x;
-	y_to = follow.y;
+	y_to = follow.y - 64;
 }
 
 

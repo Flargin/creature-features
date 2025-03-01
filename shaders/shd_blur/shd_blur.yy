@@ -1,7 +1,7 @@
 {
   "$GMShader":"",
-  "%Name":"shd_dither",
-  "name":"shd_dither",
+  "%Name":"shd_blur",
+  "name":"shd_blur",
   "parent":{
     "name":"Shaders",
     "path":"folders/Shaders.yy",

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_space_visuals",
+  "%Name":"spr_visuals_cave_2",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_space_visuals",
+  "name":"spr_visuals_cave_2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

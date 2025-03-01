@@ -1,8 +1,11 @@
+
+// CIRCLE SHADER
+
 var count = 0;
 
 with(obj_fish_glow) {
 	other.circle_pos[count*2] = x - (obj_camera.x - obj_camera.cam_width / 2);
-	other.circle_pos[count*2 + 1] = y - (obj_camera.y - obj_camera.cam_height / 2) - 5;
+	other.circle_pos[count*2 + 1] = y - (obj_camera.y - obj_camera.cam_height / 2) - 10;
 	other.circle_radius[count] = 30;
 	count++;
 }
@@ -10,13 +13,13 @@ with(obj_fish_glow) {
 with(obj_finish) {
 	other.circle_pos[count*2] = x - (obj_camera.x - obj_camera.cam_width / 2);
 	other.circle_pos[count*2 + 1] = y - (obj_camera.y - obj_camera.cam_height / 2);
-	other.circle_radius[count] = 100;
+	other.circle_radius[count] = 150;
 	count++;
 }
 
 with(obj_creature) {
 	other.circle_pos[count*2] = x - (obj_camera.x - obj_camera.cam_width / 2);
-	other.circle_pos[count*2 + 1] = y - (obj_camera.y - obj_camera.cam_height / 2);
+	other.circle_pos[count*2 + 1] = y - (obj_camera.y - obj_camera.cam_height / 2) - 16;
 	other.circle_radius[count] = 60;
 	count++;
 }
