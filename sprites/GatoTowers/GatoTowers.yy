@@ -2,17 +2,17 @@
   "$GMSprite":"",
   "%Name":"GatoTowers",
   "bboxMode":0,
-  "bbox_bottom":158,
-  "bbox_left":0,
-  "bbox_right":288,
-  "bbox_top":0,
+  "bbox_bottom":152,
+  "bbox_left":6,
+  "bbox_right":282,
+  "bbox_top":6,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"89603272-6f83-4158-a89f-a6636455371a","name":"89603272-6f83-4158-a89f-a6636455371a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2f3c4ed2-aa60-4ef6-8a29-04a9dc5b4433","name":"2f3c4ed2-aa60-4ef6-8a29-04a9dc5b4433","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"89603272-6f83-4158-a89f-a6636455371a","path":"sprites/GatoTowers/GatoTowers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5d440e95-3f9d-4f9b-be15-040a52ec6e54","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2f3c4ed2-aa60-4ef6-8a29-04a9dc5b4433","path":"sprites/GatoTowers/GatoTowers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8693c4eb-0835-410c-9c78-ac5251604de5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

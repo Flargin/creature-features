@@ -1,0 +1,1 @@
+draw_sprite(ColorCatBGGradient, 0, obj_camera.x - obj_camera.cam_width / 2, obj_camera.y - obj_camera.cam_height / 2);
