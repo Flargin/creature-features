@@ -1,20 +1,7 @@
-if(keyboard_check_pressed(ord("R")))
-	room_restart();
-	
 ///DEBUG
-if(keyboard_check_pressed(vk_f1))
+if(keyboard_check_pressed(vk_f9))
 	reroll_shop();
-if(keyboard_check_pressed(vk_f2))
-	room = rm_stage_1
-if(keyboard_check_pressed(vk_f3))
-	room = rm_stage_2
-if(keyboard_check_pressed(vk_f4))
-	room = rm_stage_3
-if(keyboard_check_pressed(vk_f5))
-	room = rm_stage_4
-if(keyboard_check_pressed(vk_f6))
-	room = rm_stage_5
-	
+
 if(room == rm_garden) {
 	if(shop) {
 		if(shop_initiate) {

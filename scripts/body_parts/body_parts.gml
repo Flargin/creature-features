@@ -464,8 +464,8 @@ function body_parts(_list){
 		sprite: -1, // sprite
 		value: 1, // shop value
 		legs_body: [0, 0], //anchor point for body [x,y]
-		w_spd: 5, // water speed
-		l_spd: -5, // land speed
+		w_spd: 8, // water speed
+		l_spd: -3, // land speed
 		c_spd: 0, // climb speed
 		g_spd: 0, // glide speed
 		a_spd: 0, // air speed

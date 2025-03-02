@@ -46,8 +46,8 @@ stage = 1;
 stages =
 [
 	rm_stage_1,
-	rm_stage_2,
 	rm_stage_3,
+	rm_stage_2,
 	rm_stage_4,
 	rm_stage_5,
 ];
