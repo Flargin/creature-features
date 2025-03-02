@@ -57,7 +57,7 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 				part = other.part;
 				active = true;
 			}
-		
+			points -= part.value;
 			obj_game_manager.shop_list[idx + 1] = -1;
 			obj_game_manager.shop = false;
 		}
