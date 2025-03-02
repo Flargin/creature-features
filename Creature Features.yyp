@@ -226,10 +226,10 @@
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"roomId":{"name":"rm_stage_1","path":"rooms/rm_stage_1/rm_stage_1.yy",},},
     {"roomId":{"name":"rm_garden","path":"rooms/rm_garden/rm_garden.yy",},},
-    {"roomId":{"name":"rm_stage_4","path":"rooms/rm_stage_4/rm_stage_4.yy",},},
     {"roomId":{"name":"rm_stage_5","path":"rooms/rm_stage_5/rm_stage_5.yy",},},
     {"roomId":{"name":"rm_stage_2","path":"rooms/rm_stage_2/rm_stage_2.yy",},},
     {"roomId":{"name":"rm_stage_3","path":"rooms/rm_stage_3/rm_stage_3.yy",},},
+    {"roomId":{"name":"rm_stage_4","path":"rooms/rm_stage_4/rm_stage_4.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
