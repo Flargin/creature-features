@@ -7,6 +7,13 @@ randomize();
 list = ds_list_create();
 body_parts(list);
 
+other_parts = {
+	head = [
+		[],
+		
+	]
+}
+
 shop_list = array_create(3, -1);
 reroll_shop();
 reroll = true;

@@ -5,6 +5,8 @@ last_h = 0;
 hor_move = 0;
 angle = 0;
 
+idx = 0;
+
 randomize();
 
 

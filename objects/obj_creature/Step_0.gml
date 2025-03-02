@@ -83,4 +83,4 @@ if(place_meeting(x + 32, y, obj_tile)) {
 angle = clamp(angle, 0, 90);
 
 //calculations
-calculate_stats();
+calculate_stats(idx);

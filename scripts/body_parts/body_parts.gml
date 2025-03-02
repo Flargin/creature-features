@@ -80,7 +80,7 @@ function body_parts(_list){
 		type: "head", // part type
 		name: "Fish Head", // name of part (used for shop)
 		sprite: spr_fish_head, // sprite
-		w_spd: 0, // water speed
+		w_spd: 5, // water speed
 		l_spd: 0, // land speed
 		c_spd: 0, // climb speed
 		g_spd: 0, // glide speed
@@ -101,7 +101,7 @@ function body_parts(_list){
 		sprite: spr_squirrel_head, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
-		c_spd: 0, // climb speed
+		c_spd: 5, // climb speed
 		g_spd: 0, // glide speed
 		a_spd: 0, // air speed
 		w_per: 0, // water % speed
@@ -119,7 +119,7 @@ function body_parts(_list){
 		name: "Rabbit Head", // name of part (used for shop)
 		sprite: spr_rabbit_head, // sprite
 		w_spd: 0, // water speed
-		l_spd: 0, // land speed
+		l_spd: 5, // land speed
 		c_spd: 0, // climb speed
 		g_spd: 0, // glide speed
 		a_spd: 0, // air speed
@@ -139,7 +139,7 @@ function body_parts(_list){
 		name: "Bull Head", // name of part (used for shop)
 		sprite: spr_bull_head, // sprite
 		w_spd: 0, // water speed
-		l_spd: 0, // land speed
+		l_spd: 10, // land speed
 		c_spd: 0, // climb speed
 		g_spd: 0, // glide speed
 		a_spd: 0, // air speed
@@ -159,7 +159,7 @@ function body_parts(_list){
 		sprite: spr_dinosaur_head, // sprite
 		w_spd: 0, // water speed
 		l_spd: 0, // land speed
-		c_spd: 0, // climb speed
+		c_spd: 10, // climb speed
 		g_spd: 0, // glide speed
 		a_spd: 0, // air speed
 		w_per: 0, // water % speed
@@ -176,8 +176,8 @@ function body_parts(_list){
 		type: "head", // part type
 		name: "Yeti? Head", // name of part (used for shop)
 		sprite: spr_yeti_head, // sprite
-		w_spd: 0, // water speed
-		l_spd: 0, // land speed
+		w_spd: 5, // water speed
+		l_spd: 5, // land speed
 		c_spd: 0, // climb speed
 		g_spd: 0, // glide speed
 		a_spd: 0, // air speed
@@ -196,14 +196,14 @@ function body_parts(_list){
 		type: "head", // part type
 		name: "D7 Head", // name of part (used for shop)
 		sprite: spr_d9_head, // sprite
-		w_spd: irandom_range(-5, 8), // water speed
-		l_spd: irandom_range(-5, 8), // land speed
-		c_spd: irandom_range(-5, 8), // climb speed
+		w_spd: irandom_range(-3, 8), // water speed
+		l_spd: irandom_range(-3, 8), // land speed
+		c_spd: irandom_range(-3, 8), // climb speed
 		g_spd: 0, // glide speed
 		a_spd: 0, // air speed
-		w_per: irandom_range(-5, 8), // water % speed
-		l_per: irandom_range(-5, 8), // land % speed
-		c_per: irandom_range(-5, 8), // climb % speed
+		w_per: irandom_range(-3, 8), // water % speed
+		l_per: irandom_range(-3, 8), // land % speed
+		c_per: irandom_range(-3, 8), // climb % speed
 		g_per: 0, // glide % speed
 		a_per: 0, // air % speed
 		g:	irandom(4) == 0, // can glide

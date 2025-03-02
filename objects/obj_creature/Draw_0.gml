@@ -33,11 +33,11 @@ if(obj_game_manager.body.sprite != -1) {
     var _oy = -obj_game_manager.legs.legs_body[1];
     var _rot_x = (lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90));
     var _rot_y = (lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90));
-    draw_sprite_ext(obj_game_manager.body.sprite, 0, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, c_white, image_alpha);
+    draw_sprite_ext(obj_game_manager.body.sprite, 0, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
 }
 
 if(obj_game_manager.legs.sprite != -1) {
-    draw_sprite_ext(obj_game_manager.legs.sprite, legs_animate, x, y, image_xscale, image_yscale, angle, c_white, image_alpha);
+    draw_sprite_ext(obj_game_manager.legs.sprite, legs_animate, x, y, image_xscale, image_yscale, angle, image_blend, image_alpha);
 }
 
 if(obj_game_manager.head.sprite != -1) {
@@ -45,7 +45,7 @@ if(obj_game_manager.head.sprite != -1) {
     var _oy = -(obj_game_manager.body.body_head[1] + obj_game_manager.legs.legs_body[1]);
     var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
     var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
-    draw_sprite_ext(obj_game_manager.head.sprite, 0, x + _rot_x, y + _rot_y + other_bob, image_xscale, image_yscale, angle, c_white, image_alpha);
+    draw_sprite_ext(obj_game_manager.head.sprite, 0, x + _rot_x, y + _rot_y + other_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
 }
 
 if(obj_game_manager.tail.sprite != -1) {
@@ -53,5 +53,5 @@ if(obj_game_manager.tail.sprite != -1) {
     var _oy = -(obj_game_manager.body.body_tail[1] + obj_game_manager.legs.legs_body[1]);
     var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
     var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
-    draw_sprite_ext(obj_game_manager.tail.sprite, tail_animate, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, c_white, image_alpha);
+    draw_sprite_ext(obj_game_manager.tail.sprite, tail_animate, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
 }
