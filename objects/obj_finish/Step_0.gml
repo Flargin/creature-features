@@ -1,5 +1,6 @@
 if(!win && !lose) {
 	if(place_meeting(x, y, obj_creature_player)) {
+		audio_play_sound(snd_portal, 1, false)
 		win = true;
 		obj_game_manager.stage++;
 		reroll_shop();

@@ -3,6 +3,9 @@ if(place_meeting(x, y, obj_cursor) && mouse_check_button_pressed(mb_left) && !di
 	
 
 if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_left) && !disable) {
+	audio_sound_gain(snd_button, 0.5, 0)
+	audio_play_sound(snd_button, 1, false)
+	
 	switch(text) {
 		case "Start": 
 			if(!instance_exists(obj_dither)) {
@@ -30,6 +33,7 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 					go = obj_game_manager.stages[obj_game_manager.stage - 1];
 					t = -100;
 				}
+				audio_play_sound(snd_portal, 1, false)
 				obj_game_manager.player_begin = true;
 			}
 		break;
