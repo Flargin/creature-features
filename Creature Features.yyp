@@ -58,6 +58,7 @@
     {"id":{"name":"obj_garden_portal","path":"objects/obj_garden_portal/obj_garden_portal.yy",},},
     {"id":{"name":"obj_menu_button","path":"objects/obj_menu_button/obj_menu_button.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
+    {"id":{"name":"obj_moai","path":"objects/obj_moai/obj_moai.yy",},},
     {"id":{"name":"obj_tile_climb","path":"objects/obj_tile_climb/obj_tile_climb.yy",},},
     {"id":{"name":"obj_tile_land","path":"objects/obj_tile_land/obj_tile_land.yy",},},
     {"id":{"name":"obj_tile_water","path":"objects/obj_tile_water/obj_tile_water.yy",},},

@@ -6,6 +6,8 @@ if(keyboard_check_pressed(vk_f3))
 	room = rm_stage_2
 if(keyboard_check_pressed(vk_f4))
 	room = rm_stage_3
+if(keyboard_check_pressed(vk_f5))
+	room = rm_stage_4
 	
 if(room == rm_garden) {
 	if(shop) {
