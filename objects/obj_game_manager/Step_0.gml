@@ -1,5 +1,9 @@
 if(keyboard_check_pressed(ord("R")))
 	room_restart();
+	
+///DEBUG
+if(keyboard_check_pressed(vk_f1))
+	reroll_shop();
 if(keyboard_check_pressed(vk_f2))
 	room = rm_stage_1
 if(keyboard_check_pressed(vk_f3))
@@ -8,6 +12,8 @@ if(keyboard_check_pressed(vk_f4))
 	room = rm_stage_3
 if(keyboard_check_pressed(vk_f5))
 	room = rm_stage_4
+if(keyboard_check_pressed(vk_f6))
+	room = rm_stage_5
 	
 if(room == rm_garden) {
 	if(shop) {
@@ -41,6 +47,19 @@ if(room == rm_garden) {
 				}
 			}
 			
+			//value
+			with(instance_create_depth(0, 0, depth - 100, obj_menu_button)) {
+				//set positioning
+				image_xscale = 3;
+				image_yscale = 1;
+				x = room_width / 2 - sprite_width / 2;
+				y = 16;
+				
+				disable = true;
+				shop = true;
+				points = true;
+			}
+			
 			
 			//three part options
 			for(var i = -1; i < 2; i++) {
@@ -48,7 +67,7 @@ if(room == rm_garden) {
 					with(instance_create_depth(0, 0, depth - 100, obj_menu_button)) {
 						//set positioning
 						image_xscale = 4.3125;
-						image_yscale = 6;
+						image_yscale = 6.5;
 						x = (room_width / 2) - (sprite_width / 2) + (sprite_width + 32) * i;
 						y = 64;
 					
@@ -73,6 +92,3 @@ if(room == rm_garden) {
 	
 }
 
-///DEBUG
-if(keyboard_check_pressed(vk_f1))
-	reroll_shop();

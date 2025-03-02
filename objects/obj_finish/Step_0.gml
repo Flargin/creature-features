@@ -11,13 +11,14 @@ if(!win) {
 					go = rm_win;
 				}
 			}
-		}
-		
-		reroll_shop();
-		if(!instance_exists(obj_dither)) {
-			with(instance_create_depth(-10, -10, depth - 10, obj_dither)) {
-				in = true;
-				go = rm_garden;
+		} else {
+			obj_game_manager.points += 3;
+			reroll_shop();
+			if(!instance_exists(obj_dither)) {
+				with(instance_create_depth(-10, -10, depth - 10, obj_dither)) {
+					in = true;
+					go = rm_garden;
+				}
 			}
 		}
 	} 

@@ -7,6 +7,9 @@ draw_self();
 draw_text(x + sprite_width / 2, y + sprite_height / 2, text);
 
 
+if(points) {
+	text = "Points: " + string(obj_game_manager.points);
+}
 
 draw_set_color(c_white);
 
@@ -26,12 +29,18 @@ if(part != -1) {
 			
 		height += sprite_get_height(part.sprite) + 16;
 	} else {
-		height += 32 + 16;
+		height += 32 + 24;
 	}
+	
 	
 	
 	draw_set_font(fnt_description);
 	var text_height = 16
+	
+	
+	draw_text(x + sprite_width / 2, y + height, "Cost: " + string(part.value) + " Points");
+	height += 24;
+	
 	
 	if(part.w_spd != 0) {
 		draw_text(x + sprite_width / 2, y + height, "+" + string(part.w_spd) + " Water Speed");
