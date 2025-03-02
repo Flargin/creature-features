@@ -51,7 +51,11 @@ if(room != rm_garden) {
 	if(instance_exists(inst)) {
 		y_vel = -climb_speed;
 	}
-
+	
+	if(place_meeting(x, y, obj_finish)) {
+		image_alpha -= .04;
+		x_vel += sign(obj_finish.x - x);
+	}
 } else {
 	if(obj_dispenser.active && image_alpha >= 1 && !obj_dispenser.ready) {
 		x_vel = -4;
