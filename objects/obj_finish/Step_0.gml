@@ -1,4 +1,4 @@
-if(!win && !lose) {
+if(!win) {
 	if(place_meeting(x, y, obj_creature_player)) {
 		audio_play_sound(snd_portal, 1, false)
 		win = true;
@@ -20,7 +20,5 @@ if(!win && !lose) {
 				go = rm_garden;
 			}
 		}
-	} else if(place_meeting(x, y, obj_creature))
-		lose = true;
+	} 
 }
-

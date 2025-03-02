@@ -50,13 +50,17 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 	}
 	
 	if(part != -1) {
-		with(obj_dispenser) {
-			part = other.part;
-			active = true;
-		}
+		if(points < part.value) {
+			//PLAY SOUND HERE GAVIN
+		} else {
+			with(obj_dispenser) {
+				part = other.part;
+				active = true;
+			}
 		
-		obj_game_manager.shop_list[idx + 1] = -1;
-		obj_game_manager.shop = false;
+			obj_game_manager.shop_list[idx + 1] = -1;
+			obj_game_manager.shop = false;
+		}
 	}
 	
 }

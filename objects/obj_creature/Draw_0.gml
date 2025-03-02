@@ -1,5 +1,5 @@
 var legs_frames = max(sprite_get_number(obj_game_manager.legs.sprite), 7);
-var tail_frames = sprite_get_number(obj_game_manager.tail.sprite)
+var tail_frames = max(sprite_get_number(obj_game_manager.tail.sprite), 7);
 if(room == rm_garden)
 	legs_animate += abs(x_vel) * 8 / 60;
 else
@@ -28,30 +28,61 @@ if(obj_game_manager.tail.sprite != -1)
 	draw_sprite_ext(obj_game_manager.tail.sprite, tail_animate, x + (obj_game_manager.body.body_tail[0] + obj_game_manager.legs.legs_body[0]) * image_xscale, y + obj_game_manager.body.body_tail[1] + obj_game_manager.legs.legs_body[1] + body_bob, image_xscale, image_yscale, angle, c_white, image_alpha);
 */
 
-if(obj_game_manager.body.sprite != -1) {
-    var _ox = obj_game_manager.legs.legs_body[0] * image_xscale;
-    var _oy = -obj_game_manager.legs.legs_body[1];
-    var _rot_x = (lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90));
-    var _rot_y = (lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90));
-    draw_sprite_ext(obj_game_manager.body.sprite, 0, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
-}
+if(idx == -1) {
+	if(obj_game_manager.body.sprite != -1) {
+	    var _ox = obj_game_manager.legs.legs_body[0] * image_xscale;
+	    var _oy = -obj_game_manager.legs.legs_body[1];
+	    var _rot_x = (lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90));
+	    var _rot_y = (lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90));
+	    draw_sprite_ext(obj_game_manager.body.sprite, 0, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
 
-if(obj_game_manager.legs.sprite != -1) {
-    draw_sprite_ext(obj_game_manager.legs.sprite, legs_animate, x, y, image_xscale, image_yscale, angle, image_blend, image_alpha);
-}
+	if(obj_game_manager.legs.sprite != -1) {
+	    draw_sprite_ext(obj_game_manager.legs.sprite, legs_animate, x, y, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
 
-if(obj_game_manager.head.sprite != -1) {
-    var _ox = (obj_game_manager.body.body_head[0] + obj_game_manager.legs.legs_body[0]) * image_xscale;
-    var _oy = -(obj_game_manager.body.body_head[1] + obj_game_manager.legs.legs_body[1]);
-    var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
-    var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
-    draw_sprite_ext(obj_game_manager.head.sprite, 0, x + _rot_x, y + _rot_y + other_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
-}
+	if(obj_game_manager.head.sprite != -1) {
+	    var _ox = (obj_game_manager.body.body_head[0] + obj_game_manager.legs.legs_body[0]) * image_xscale;
+	    var _oy = -(obj_game_manager.body.body_head[1] + obj_game_manager.legs.legs_body[1]);
+	    var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
+	    var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
+	    draw_sprite_ext(obj_game_manager.head.sprite, 0, x + _rot_x, y + _rot_y + other_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
 
-if(obj_game_manager.tail.sprite != -1) {
-    var _ox = (obj_game_manager.body.body_tail[0] + obj_game_manager.legs.legs_body[0]) * image_xscale;
-    var _oy = -(obj_game_manager.body.body_tail[1] + obj_game_manager.legs.legs_body[1]);
-    var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
-    var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
-    draw_sprite_ext(obj_game_manager.tail.sprite, tail_animate, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	if(obj_game_manager.tail.sprite != -1) {
+	    var _ox = (obj_game_manager.body.body_tail[0] + obj_game_manager.legs.legs_body[0]) * image_xscale;
+	    var _oy = -(obj_game_manager.body.body_tail[1] + obj_game_manager.legs.legs_body[1]);
+	    var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
+	    var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
+	    draw_sprite_ext(obj_game_manager.tail.sprite, tail_animate, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
+
+} else {
+	if(obj_game_manager.other_parts.body[idx][obj_game_manager.stage - 1].sprite != -1) {
+	    var _ox = obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].legs_body[0] * image_xscale;
+	    var _oy = -obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].legs_body[1];
+	    var _rot_x = (lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90));
+	    var _rot_y = (lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90));
+	    draw_sprite_ext(obj_game_manager.other_parts.body[idx][obj_game_manager.stage - 1].sprite, 0, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
+
+	if(obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].sprite != -1) {
+	    draw_sprite_ext(obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].sprite, legs_animate, x, y, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
+
+	if(obj_game_manager.other_parts.head[idx][obj_game_manager.stage - 1].sprite != -1) {
+	    var _ox = (obj_game_manager.other_parts.body[idx][obj_game_manager.stage - 1].body_head[0] + obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].legs_body[0]) * image_xscale;
+	    var _oy = -(obj_game_manager.other_parts.body[idx][obj_game_manager.stage - 1].body_head[1] + obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].legs_body[1]);
+	    var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
+	    var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
+	    draw_sprite_ext(obj_game_manager.other_parts.head[idx][obj_game_manager.stage - 1].sprite, 0, x + _rot_x, y + _rot_y + other_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
+
+	if(obj_game_manager.other_parts.tail[idx][obj_game_manager.stage - 1].sprite != -1) {
+	    var _ox = (obj_game_manager.other_parts.body[idx][obj_game_manager.stage - 1].body_tail[0] + obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].legs_body[0]) * image_xscale;
+	    var _oy = -(obj_game_manager.other_parts.body[idx][obj_game_manager.stage - 1].body_tail[1] + obj_game_manager.other_parts.legs[idx][obj_game_manager.stage - 1].legs_body[1]);
+	    var _rot_x = lengthdir_x(_ox, angle) + lengthdir_x(_oy, angle + 90);
+	    var _rot_y = lengthdir_y(_ox, angle) + lengthdir_y(_oy, angle + 90);
+	    draw_sprite_ext(obj_game_manager.other_parts.tail[idx][obj_game_manager.stage - 1].sprite, tail_animate, x + _rot_x, y + _rot_y + body_bob, image_xscale, image_yscale, angle, image_blend, image_alpha);
+	}
 }

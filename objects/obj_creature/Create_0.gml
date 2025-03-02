@@ -5,14 +5,14 @@ last_h = 0;
 hor_move = 0;
 angle = 0;
 
-idx = 0;
+idx = -1;
 
 randomize();
 
 
 image_blend = make_color_rgb(irandom(255), irandom(255), irandom(255));
 
-calculate_stats();
+
 
 legs_animate = 0;
 tail_animate = 0;

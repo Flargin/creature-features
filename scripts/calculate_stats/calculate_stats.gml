@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function calculate_stats(){
-	if(idx == -1) {
+function calculate_stats(_idx){
+	if(_idx == -1) {
 		with(obj_game_manager) {
 		other.land_speed = max(5,
 			(10 + head.l_spd + body.l_spd + legs.l_spd + tail.l_spd) * 
@@ -32,6 +32,34 @@ function calculate_stats(){
 	
 		}
 	} else {
-		
+		with(obj_game_manager) {
+		other.land_speed = max(5,
+			(10 + other_parts.head[other.idx][stage - 1].l_spd + other_parts.body[other.idx][stage - 1].l_spd + other_parts.legs[other.idx][stage - 1].l_spd + other_parts.tail[other.idx][stage - 1].l_spd) * 
+			((other_parts.head[other.idx][stage - 1].l_per / 100) + (other_parts.body[other.idx][stage - 1].l_per / 100) + (other_parts.legs[other.idx][stage - 1].l_per / 100) + (other_parts.tail[other.idx][stage - 1].l_per / 100) + 1)
+		) / 5;
+	
+		other.water_speed = max(5,
+			(10 + other_parts.head[other.idx][stage - 1].w_spd + other_parts.body[other.idx][stage - 1].w_spd + other_parts.legs[other.idx][stage - 1].w_spd + other_parts.tail[other.idx][stage - 1].w_spd) * 
+			((other_parts.head[other.idx][stage - 1].w_per / 100) + (other_parts.body[other.idx][stage - 1].w_per / 100) + (other_parts.legs[other.idx][stage - 1].w_per / 100) + (other_parts.tail[other.idx][stage - 1].w_per / 100) + 1)
+		) / 5;
+	
+		other.climb_speed = max(5,
+			(10 + other_parts.head[other.idx][stage - 1].c_spd + other_parts.body[other.idx][stage - 1].c_spd + other_parts.legs[other.idx][stage - 1].c_spd + other_parts.tail[other.idx][stage - 1].c_spd) * 
+			((other_parts.head[other.idx][stage - 1].c_per / 100) + (other_parts.body[other.idx][stage - 1].c_per / 100) + (other_parts.legs[other.idx][stage - 1].c_per / 100) + (other_parts.tail[other.idx][stage - 1].c_per / 100) + 1)
+		) / 5;
+	
+		other.air_speed = max(5,
+			(10 + other_parts.head[other.idx][stage - 1].a_spd + other_parts.body[other.idx][stage - 1].a_spd + other_parts.legs[other.idx][stage - 1].a_spd + other_parts.tail[other.idx][stage - 1].a_spd) * 
+			((other_parts.head[other.idx][stage - 1].a_per / 100) + (other_parts.body[other.idx][stage - 1].a_per / 100) + (other_parts.legs[other.idx][stage - 1].a_per / 100) + (other_parts.tail[other.idx][stage - 1].a_per / 100) + 1)
+		) / 5;
+	
+		other.glide = max(5,
+			(10 + other_parts.head[other.idx][stage - 1].g_spd + other_parts.body[other.idx][stage - 1].g_spd + other_parts.legs[other.idx][stage - 1].g_spd + other_parts.tail[other.idx][stage - 1].g_spd) * 
+			((other_parts.head[other.idx][stage - 1].g_per / 100) + (other_parts.body[other.idx][stage - 1].g_per / 100) + (other_parts.legs[other.idx][stage - 1].g_per / 100) + (other_parts.tail[other.idx][stage - 1].g_per / 100) + 1)
+		) / 5;
+	
+		other.glide_hover = other_parts.head[other.idx][stage - 1].g || other_parts.body[other.idx][stage - 1].g || other_parts.legs[other.idx][stage - 1].g || other_parts.tail[other.idx][stage - 1].g;
+	
+		}
 	}
 }

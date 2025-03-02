@@ -76,6 +76,23 @@ function body_parts(_list){
 /// INDIVIDUAL BODY PARTS
 	
 #region Head Parts
+	gloop_head = {
+		type: "head", // part type
+		sprite: spr_gloop_head, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		a_spd: 0, // air speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		a_per: 0, // air % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+
 	fish_head = {
 		type: "head", // part type
 		name: "Fish Head", // name of part (used for shop)
@@ -214,7 +231,25 @@ function body_parts(_list){
 #endregion
 
 #region Body Parts
-
+	gloop_body = {
+		type: "body", // part type
+		sprite: spr_gloop_body, // sprite
+		body_tail: [-10, -4], // anchor point for tail [x, y]
+		body_head: [-2, -10], // anchor point for head [x, y]
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		a_spd: 0, // air speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		a_per: 0, // air % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
+	
 	fish_body = {
 		type: "body", // part type
 		name: "Fish Body", // name of part (used for shop)
@@ -387,6 +422,23 @@ function body_parts(_list){
 #endregion
 
 #region Leg Parts
+	gloop_legs = {
+		type: "legs", // part type
+		sprite: spr_gloop_legs, // sprite
+		legs_body: [8, -8], //anchor point for body [x,y]
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		a_spd: 0, // air speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		a_per: 0, // air % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
 
 	fish_legs = {
 		type: "legs", // part type
@@ -573,6 +625,22 @@ function body_parts(_list){
 #endregion
 
 #region Tail Parts
+	gloop_tail = {
+		type: "tail", // part type
+		sprite: -1, // sprite
+		w_spd: 0, // water speed
+		l_spd: 0, // land speed
+		c_spd: 0, // climb speed
+		g_spd: 0, // glide speed
+		a_spd: 0, // air speed
+		w_per: 0, // water % speed
+		l_per: 0, // land % speed
+		c_per: 0, // climb % speed
+		g_per: 0, // glide % speed
+		a_per: 0, // air % speed
+		g:	false, // can glide
+		ability: -1, // ability ID ( -1 means no ability )
+	}
 
 	fish_tail = {
 		type: "tail", // part type
