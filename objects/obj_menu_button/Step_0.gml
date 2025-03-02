@@ -2,12 +2,11 @@ if(place_meeting(x, y, obj_cursor) && mouse_check_button_pressed(mb_left) && !di
 	held = true;
 	
 
-if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_left) && !disable) {
-	audio_sound_gain(snd_button, 0.5, 0)
-	audio_play_sound(snd_button, 1, false)
-	
+if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_left) && !disable) {	
 	switch(text) {
 		case "Start": 
+			audio_sound_gain(snd_button, 0.5, 0)
+			audio_play_sound(snd_button, 1, false)
 			if(!instance_exists(obj_dither)) {
 				with(instance_create_depth(-10, -10, depth - 10, obj_dither)) {
 					in = true;
@@ -17,16 +16,21 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 		break;
 		
 		case "Exit" :
+			audio_sound_gain(snd_button, 0.5, 0)
+			audio_play_sound(snd_button, 1, false)
 			game_end();
 		break;
 		
 		case "Shop":
+			audio_sound_gain(snd_button, 0.5, 0)
+			audio_play_sound(snd_button, 1, false)
 			if(!obj_dispenser.active)
 				obj_game_manager.shop = true;
 		break;
 		
 		case "BEGIN":
-		
+			audio_sound_gain(snd_button, 0.5, 0)
+			audio_play_sound(snd_button, 1, false)
 			if(!instance_exists(obj_dither) && !obj_dispenser.active) {
 				with(instance_create_depth(-10, -10, depth - 10, obj_dither)) {
 					in = true;
@@ -39,10 +43,14 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 		break;
 		
 		case "Back":
+			audio_sound_gain(snd_button, 0.5, 0)
+			audio_play_sound(snd_button, 1, false)
 			obj_game_manager.shop = false;
 		break;
 		
 		case "Reroll":
+			audio_sound_gain(snd_button, 0.5, 0)
+			audio_play_sound(snd_button, 1, false)
 			obj_game_manager.reroll = false;
 			reroll_shop();
 			instance_destroy();
@@ -51,8 +59,11 @@ if(held && place_meeting(x, y, obj_cursor) && mouse_check_button_released(mb_lef
 	
 	if(part != -1) {
 		if(obj_game_manager.points < part.value) {
-			//PLAY SOUND HERE GAVIN
+			audio_sound_gain(snd_buzzer, 0.5, 0)
+			audio_play_sound(snd_buzzer, 1, false)
 		} else {
+			audio_sound_gain(snd_button, 0.5, 0)
+			audio_play_sound(snd_button, 1, false)
 			with(obj_dispenser) {
 				part = other.part;
 				active = true;
