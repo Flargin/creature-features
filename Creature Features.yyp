@@ -91,6 +91,7 @@
     {"id":{"name":"mus_normal","path":"sounds/mus_normal/mus_normal.yy",},},
     {"id":{"name":"mus_race","path":"sounds/mus_race/mus_race.yy",},},
     {"id":{"name":"snd_button","path":"sounds/snd_button/snd_button.yy",},},
+    {"id":{"name":"snd_buzzer","path":"sounds/snd_buzzer/snd_buzzer.yy",},},
     {"id":{"name":"snd_portal","path":"sounds/snd_portal/snd_portal.yy",},},
     {"id":{"name":"snd_slime","path":"sounds/snd_slime/snd_slime.yy",},},
     {"id":{"name":"BGExtraGatoTower","path":"sprites/BGExtraGatoTower/BGExtraGatoTower.yy",},},
