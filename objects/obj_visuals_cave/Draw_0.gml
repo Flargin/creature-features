@@ -6,7 +6,7 @@ var count = 0;
 with(obj_fish_glow) {
 	other.circle_pos[count*2] = x - (obj_camera.x - obj_camera.cam_width / 2);
 	other.circle_pos[count*2 + 1] = y - (obj_camera.y - obj_camera.cam_height / 2) - 10;
-	other.circle_radius[count] = 30;
+	other.circle_radius[count] = 40;
 	count++;
 }
 

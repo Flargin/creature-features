@@ -48,8 +48,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Race BG",
-    "path":"folders/Sprites/background/Race BG.yy",
+    "name":"space",
+    "path":"folders/Sprites/background/Race BG/space.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
