@@ -31,3 +31,5 @@ stages =
 ///DEBUG
 debug = false;
 //show_debug_overlay(true);
+
+audio_sound_gain(mus_race, 0.5, 0)
