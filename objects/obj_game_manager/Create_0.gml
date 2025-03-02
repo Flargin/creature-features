@@ -61,3 +61,6 @@ debug = false;
 //show_debug_overlay(true);
 
 audio_sound_gain(mus_race, 0.5, 0)
+audio_sound_gain(mus_race2, 0.5, 0)
+audio_sound_gain(mus_racecat, 0.5, 0)
+audio_sound_gain(mus_racecdm, 0.75, 0)
